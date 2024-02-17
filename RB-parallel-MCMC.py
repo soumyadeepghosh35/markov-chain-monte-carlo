@@ -13,8 +13,9 @@ parallel MCMC.
 
 import matplotlib.pyplot as plt
 import numpy as np
-from Data import DataLoad
 from scipy.stats import norm
+
+from Data import DataLoad
 from Seed import SeedGen
 
 

@@ -13,8 +13,9 @@ parallel MCMC.
 
 import matplotlib.pyplot as plt
 import numpy as np
-from Data import DataLoad
 from scipy.stats import norm
+
+from Data import DataLoad
 from Seed import SeedGen
 
 
@@ -135,7 +136,7 @@ class ARB_BayesianLogReg:
             Proposals = np.insert(y, 0, xI, axis=0)
 
             ########################################################
-            # Compute probability ratios = weights of IS-estimator #
+            # Compute probability ratios = weights of RB-estimator #
             ########################################################
 
             # Compute Log-posterior probabilities
